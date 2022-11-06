@@ -47,6 +47,11 @@ git push --tags
 #ask colleagues to remove tags, not available in remote
 git pull --prune --tags
 
+################################################################################
+
+#Linux specific (when using GCM + GPG for managing GitHub credetnials): switch to terminal only prompts
+git config --global credential.gitHubHelper ""
+
 #vi save
 Esc, :wq
 
