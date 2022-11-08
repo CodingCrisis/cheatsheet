@@ -49,6 +49,12 @@ git push -d origin develop
 #Show files changed in working directory
 git status
 
+#Show changes to tracked files; to compare staged changes se --staged
+git diff
+
+#Add all changes in the working directory to next commit
+git add .
+
 #Clean repo from untracked files; -f --force; -d recurse; -x no ignore rules; -n --dry-run
 #Caution, you may hurt yourself
 git clean -fdxn
