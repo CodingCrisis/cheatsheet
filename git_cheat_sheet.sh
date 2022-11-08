@@ -1,5 +1,14 @@
-#Clone this repo under "cheat" dir
+################################################################################
+#CREATE REPO
+
+#Create an empty local Git repository
+git init
+
+#Clone this GitHub repo under "cheat" dir
 git clone https://github.com/CodingCrisis/cheatsheet.git cheat
+
+################################################################################
+#MANAGE REMOTES
 
 #Show tracked repositories, including url
 git remote -v
@@ -10,9 +19,8 @@ git remote rm origin
 #Add this repository as origin
 git remote add origin https://github.com/CodingCrisis/cheatsheet.git
 
-#Clean repo from untracked files; -f --force; -d recurse; -x no ignore rules; -n --dry-run
-#Caution, you may hurt yourself
-git clean -fdxn
+################################################################################
+#WORK WITH BRANCHES
 
 #Create a new branch "develop" from current branch and switch to that new branch
 git switch -c develop 
@@ -34,6 +42,25 @@ git branch -d dev
 
 #Remove "develop" branch at origin
 git push -d origin develop
+
+################################################################################
+#WORK WITH LOCAL CHANGES
+
+#Show files changed in working directory
+git status
+
+#Clean repo from untracked files; -f --force; -d recurse; -x no ignore rules; -n --dry-run
+#Caution, you may hurt yourself
+git clean -fdxn
+
+################################################################################
+#WORK WITH HISTORY
+
+#Show last 5 commits in a one line format
+git log --pretty=oneline -5
+
+################################################################################
+#WORK WITH TAGS
 
 #tag a branch; -a annotated tag (with metadata)
 git tag -a release1 -m "Tag for release 1"
