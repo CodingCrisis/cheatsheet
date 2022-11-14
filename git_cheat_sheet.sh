@@ -55,6 +55,12 @@ git diff
 #Add all changes in the working directory to next commit
 git add .
 
+#Reset Staging Index to HEAD, so remove all files from staging; it actually runs git reset --mixed HEAD
+git reset
+
+#Reset Staging Index and Working Directory to HEAD (or selected commit/branch)
+git reset --hard
+
 #Clean repo from untracked files; -f --force; -d recurse; -x no ignore rules; -n --dry-run
 #Caution, you may hurt yourself
 git clean -fdxn
