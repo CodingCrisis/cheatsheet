@@ -72,7 +72,7 @@ git clean -fdxn
 git log --pretty=oneline -5
 
 #A custom version of 'Show last 5 commits'; work in progress
-git log --pretty="format:%C(yellow)%h %C(magenta)%>(12)%ad %Cgreen%<(18)%aN%Cred%d %Creset%s" --date=format:'%a %Y-%m-%d %H:%M' -5
+git log --pretty="format:%C(yellow)%h %C(magenta)%>(12)%ad %Cgreen%<(18)%aN%Cred%d %Creset%s" --date=format:"%a %Y-%m-%d %H:%M" -5
 
 ################################################################################
 #WORK WITH TAGS
