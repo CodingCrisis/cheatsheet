@@ -30,3 +30,6 @@ rm filename.txt
 #create a link; -s for a symbolic link
 ln filename.txt filenamelink
 
+#create an alias
+alias gitlog='git log --pretty="format:%C(yellow)%h %C(magenta)%>(12)%ad %Cgreen%<(18)%aN%Cred%d %Creset%s" --date=format:"%a %Y-%m-%d %H:%M"'
+
