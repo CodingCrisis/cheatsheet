@@ -33,3 +33,18 @@ ln filename.txt filenamelink
 #create an alias
 alias gitlog='git log --pretty="format:%C(yellow)%h %C(magenta)%>(12)%ad %Cgreen%<(18)%aN%Cred%d %Creset%s" --date=format:"%a %Y-%m-%d %H:%M"'
 
+#remove alias
+unalias gitlog
+
+#type of command
+type ls
+
+#short command info
+whatis ls
+
+#show manual for command
+man ls
+
+#basic man search
+apropos alarm
+
