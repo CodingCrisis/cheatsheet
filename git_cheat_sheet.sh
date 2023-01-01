@@ -49,7 +49,7 @@ git push -d origin develop
 #Show files changed in working directory
 git status
 
-#Show changes to tracked files; to compare staged changes se --staged
+#Show changes to tracked files; to compare staged changes use --staged
 git diff
 
 #Add all changes in the working directory to next commit
