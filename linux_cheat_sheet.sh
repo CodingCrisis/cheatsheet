@@ -48,3 +48,11 @@ man ls
 #basic man search
 apropos alarm
 
+#show current jobs
+jobs
+
+#resume next job from the queue
+fg
+
+#push next job from the queue to background
+bg
